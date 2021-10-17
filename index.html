@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotton Tomatoes</title>
+
+    <link rel="icon" href="Assets/Icon.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700">
+    <link rel="stylesheet" href="style.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <ul>
+                <li><img src="Assets/Logo.png" alt=""></li>
+                <li><a href="">Movies & DVDs</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#picks">Certified Picks</a></li>
+                <li><a href="#member">Be a Member</a></li>
+            </ul>
+        </div>
+        <div class="movie-detail">
+            <div class="title">
+                <p class="movie-title">Deadpool 2</p>
+                <p class="movie-year">(2018)</p>
+            </div>
+            <div class="rating-container">
+                <div class="rating-item">
+                    <p class="tomatometer">Tomatometer</p>
+                    <p class="tomatometer-score">83%</p>
+                </div>
+                <div class="rating-item">
+                    <p class="audience">Audience Score</p>
+                    <p class="audience-score">85%</p>
+                </div>
+            </div>
+            <!-- <progress id="final-rating" value="84" max="100"></progress> -->
+            <div class="meter red nostripes margin">
+                <span style="width: 84%"></span>
+            </div>
+        </div>
+        <div class="button-list">
+            <button class="button-one" onclick="functionOne()">1</button>
+            <button class="button-two" onclick="functionTwo()">2</button>
+            <button class="button-three" onclick="functionThree()">3</button>
+            <button class="button-four" onclick="functionFour()">4</button>
+            <button class="button-five" onclick="functionFive()">5</button>
+        </div>
+    </div>
+    <div class="news" id="news">
+        <div class="top-movies">
+            <div class="movie">
+                <img src="Assets/Content_Poster_1.jpg" alt="">
+                <p class="release-date">7th of December, 2018 in <b>Trailers</b></p>
+                <p class="title"><b>5 Things We Learned From The AVENGERS: ENDGAME<br>Trailer</b></p>
+                <br>
+                <p class="caption">Tony's lost in space, Clint Level up, and more <br> revelations.</p>
+            </div>
+            <div class="movie">
+                <img src="Assets/Content_Poster_2.jpg" alt="">
+                <p class="release-date">18th of October, 2018 in <b>Awards</b></p>
+                <p class="title"><b>Six Upcoming Movies Set To Shake Up<br>Awards Season</b></p>
+                <br>
+                <p class="caption">Think the frontrunners are a lock? Freddie Mercury, A <br>Scottish Queen and a certain flying nanny beg to differ.</p>
+            </div>
+        </div>
+        <div class="top-movies">
+            <div class="movie">
+                <img src="Assets/Content_Poster_3.jpg" alt="">
+                <p class="release-date">14th of December, 2018 in News</p>
+                <p class="title"><b>The Mary Poppins Returns Cast Watched<br>Bizarre Christmas Movies Growing Up</b></p>
+                <br>
+                <p class="caption">Plus, Emily Blunt talks about her big yerar in bathtubs<br>and lin-manuel miranda explains why the little<br>mermaid is so important to him.</p>
+            </div>
+            <div class="movie">
+                <img src="Assets/Content_Poster_4.jpg" alt="">
+                <p class="release-date">4th of December, 2018 in TV</p>
+                <p class="title"><b>Stars Grant Gustin, Candice Patton, and<br>More Reflect on 100 Episodes</b></p>
+                <br>
+                <p class="caption">Ahead of the series' landmark 100th episode, the cast<br>of the CW superhero hit reflect on their most<br>memorable moments from the show.</p>
+            </div>
+        </div>
+        <div class="movies-list">
+            <div class="top-box-office columns">
+                <div class="list-title">
+                    <p>Top Box Office</p>
+                    <p>View All</p>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Bad.png" alt="">
+                        <p>50%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Equalizer 2</b></p>
+                        <p>$36.1 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>81%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Christopher Robin</b></p>
+                        <p>$35.1 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>87%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Ant-Man and The Wasp</b></p>
+                        <p>$23.9 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>77%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Escape Room</b></p>
+                        <p>$10.2 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>97%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Incredibles 2</b></p>
+                        <p>$12.6 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>78%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Mary Poppins Return</b></p>
+                        <p>$33.4 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>92%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Bumblebee</b></p>
+                        <p>$98.2 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>62%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Bohemian Rhapsody</b></p>
+                        <p>$28.5 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>88%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Ralph Breaks The Internet</b></p>
+                        <p>$10 Million</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opening">
+                <div class="list-title">
+                    <p>Opening This Week</p>
+                    <p>View All</p>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Bad.png" alt="">
+                        <p>36%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Glass</b></p>
+                        <p>$56.8 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>80%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Dragon Ball Super: Broly</b></p>
+                        <p>$2.1 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>71%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Adult Life Skills</b></p>
+                        <p>$9 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>91%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Don't Comeback From The<br>Moon</b></p>
+                        <p>$8.2 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>10%</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Replica</b></p>
+                        <p>$29.8 Million</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coming-soon">
+                <div class="list-title">
+                    <p>Coming Soon</p>
+                    <p>View All</p>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icona.png" alt="">
+                        <p>TBA</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>The Lego Movie</b></p>
+                        <p>$8.5 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icona.png" alt="">
+                        <p>TBA</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Alita: Battle Angel</b></p>
+                        <p>$40.6 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icona.png" alt="">
+                        <p>TBA</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Captain Marvel</b></p>
+                        <p>$123.5 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icona.png" alt="">
+                        <p>TBA</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Shahzam!</b></p>
+                        <p>$87.5 Million</p>
+                    </div>
+                </div>
+                <div class="movie-collection">
+                    <div class="movie-rating">
+                        <img src="Assets/Icona.png" alt="">
+                        <p>TBA</p>
+                    </div>
+                    <div class="movie-income">
+                        <p><b>Incredibles 2</b></p>
+                        <p>$12.6 Million</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="certified-picks" id="picks">
+        <div class="skew-background"></div>
+        <div class="certified-picks-title">
+            <p>Certified Fresh Picks</p>
+            <p>View All</p>
+        </div>
+        <div class="certified-picks-info">
+            <img src="Assets/Certified_Fresh.png" alt="">
+            <p>Movies and TV shows are Certified Fresh with a steady<br>
+                Tomatometer of 75% or higher after a set amount of<br>
+                reviews (80 or wide-release movies, 40 for limited-release<br>
+                movies, 20 for TV shows), including 5 reviews from Top<br>
+                Critics
+            </p>
+        </div>
+        <div class="certified-movie-picks">
+            <div class="certified-movie-container">
+                <div class="certified-movie">
+                    <p>In Theathers</p>
+                    <img src="Assets/Certified_Fresh_1.jpg" alt="">
+                    <div class="certified-movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>100%</p>
+                    </div>
+                    <p>Paddington 2</p>
+                </div>
+                <div class="certified-movie">
+                    <p>On DVD / Streaming</p>
+                    <img src="Assets/Certified_Fresh_2.jpg" alt="">
+                    <div class="certified-movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>100%</p>
+                    </div>
+                    <p>Leave No Trace</p>
+                </div>
+                <div class="certified-movie">
+                    <p>In Theathers</p>
+                    <img src="Assets/Certified_Fresh_3.jpg" alt="">
+                    <div class="certified-movie-rating">
+                        <img src="Assets/Icon_Certified.png" alt="">
+                        <p>99%</p>
+                    </div>
+                    <p>Eighth Grade</p>
+                </div>
+                <div class="certified-movie">
+                    <p>On TV</p>
+                    <img src="Assets/Certified_Fresh_4.jpg" alt="">
+                    <div class="certified-movie-rating">
+                        <img src="Assets/Icon_Good.png" alt="">
+                        <p>92%</p>
+                    </div>
+                    <p>Searching</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="member" id="member">
+        <div class="member-box">
+            <p>Enter email to receive updates</p>
+            <div class="email-input">
+                <input type="email" placeholder="Your Email Address">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <p>Help</p>
+                <p>About Rotton Tomatoes</p>
+                <p>What's the Tomatometer?</p>
+                <p>Feedback</p>
+            </div>
+            <div class="footer-item">
+                <p>Critic Submission</p>
+                <p>Licensing</p>
+                <p>Advertising</p>
+                <p>Careers</p>
+            </div>
+            <div class="footer-item-center">
+                <h3>Join The Newsletter!</h3>
+                <p>Get the freshest reviews, news, and more <br> delivered right to your inbox!</p>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="footer-item-center">
+                <h3>Follow Us</h3>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <p class="copyright">&copy 2019, TO16-2 All rights reserved</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
